@@ -1,0 +1,481 @@
+body{
+    background-color: white;
+   
+  }
+  .container {
+      display: grid;
+      max-width: 10000px;
+      min-width: 320px;
+      position: relative;
+      margin: auto;
+      grid-template-areas: 
+        "sd title title title title"
+        "sd hd hd hd hd"
+        "sd a b c d"
+        "sd left left right right"
+        "sd left left right right"
+        "sd left left right right";
+        grid-gap: 2%;
+      grid-template-rows: 70px 100px 60px 300px;
+      grid-template-columns: 160px 200px 200px 200px 200px;
+    justify-content: center;
+    
+       
+  }
+  
+  .title{
+    grid-area: title;
+    font-family: Arial;
+    text-align: left;
+    padding-top: 15px;
+    
+    color: gray;
+    font-size: 22px;
+    letter-spacing: 1.9px;
+  }
+  
+  .sidebar{
+    grid-area: sd;
+    background-color: #C4E2FF;
+    color: gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    font-family: Arial;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+
+  .smallpic {
+    text-align: center;
+  }
+
+  .smallpic img{
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .LD{
+      text-decoration: none;
+      color: gray;
+      font-family: Arial;
+  }
+  .LD:hover{
+      background-color: #D3D2FF;
+      cursor: pointer;
+      border-radius: 15px;
+      
+      
+  }
+  .sidebar ul{
+    margin-top: 85px;
+    list-style-type: none;
+    padding-right: 30px;
+    text-decoration: none;
+  }
+  .sidebar li{
+    padding: 20px 20px 20px 10px;
+    
+  }
+  .sidebar li:hover{
+    background-color: #D3D2FF;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .sidebar li a{
+      text-decoration:none;
+      color: gray;
+  }
+  
+  .welcome{
+    grid-area: hd;
+    background-color: mistyrose;
+    border-radius: 15px;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-size: 28px;
+    line-height: 10px;
+    color: gray;
+  }
+  p{
+    font-size: 9.5px;
+    display: contents;
+    
+  }
+  
+  .grid-one{
+    grid-area: a;
+    background-color: lavender;
+    border-radius: 15px;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 8px;
+    color: gray;
+    grid-template-columns: (autofit (100px, 1fr));
+    grid-auto-flow: dense;
+  }
+  .grid-one p{
+    font-size: 24px;
+  }
+  .grid-one:hover{
+      color: white;
+      cursor: pointer;
+      border-radius: 15px;
+      border: solid 2px mistyrose;
+  }
+  .grid-one a{
+      text-decoration: none;
+      color: gray;
+  }
+  .grid-one a:hover{
+      color:white;
+  }
+  
+  .grid-two{
+    grid-area: b;
+    background-color: lavender;
+    border-radius: 15px;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 8px;
+    color: gray;
+    grid-template-columns: (autofit (100px, 1fr));
+    grid-auto-flow: dense;
+  }
+  .grid-two p{
+    font-size: 24px;
+  }
+  .grid-two:hover{
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid 2px mistyrose;
+}
+  
+  .grid-three{
+    grid-area: c;
+    background-color: lavender;
+    border-radius: 15px;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 8px;
+    color: gray;
+    grid-template-columns: (autofit (100px, 1fr));
+    grid-auto-flow: dense;
+  }
+  .grid-three p{
+    font-size: 24px;
+  }
+  .grid-three:hover{
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid 2px mistyrose;
+}
+.grid-three a{
+  text-decoration: none;
+  color: gray;
+}
+.grid-three a:hover{
+  color: white;
+}
+  
+  .grid-four{
+    grid-area: d;
+    background-color: lavender;
+    border-radius: 15px;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 8px;
+    color: gray;
+    grid-template-columns: (autofit (100px, 1fr));
+    grid-auto-flow: dense;
+  }
+  .grid-four p{
+    font-size: 24px;
+  }
+  .grid-four:hover{
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid 2px mistyrose;
+}
+  
+  .calendar{
+    grid-area: left;
+    background-color: #D3D2FF;
+    border-radius: 15px;
+    font-family: Arial;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 18px;
+    color: gray;
+    grid-template-columns: (autofit (100px, 1fr));
+    grid-auto-flow: dense;
+  }
+  .calendar .view{
+    font-size: 13px;
+    display: float;
+    float: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    
+  }
+  .view a{
+    text-decoration: none;
+    color: gray;
+  }
+  .view a:hover{
+    color: white;
+    cursor: pointer;
+  }
+
+  .embed{
+      border-radius: 15px;
+  }
+  
+  .calendar q{
+    font-size: 11px;
+  }
+  
+  .current-projects{
+    grid-area: right;
+    background-color: #D3D2FF;
+    border-radius: 15px;
+    font-family: Arial;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 18px;
+    color: gray;
+    grid-template-columns: (autofit (100px, 1fr));
+    grid-auto-flow: dense;
+  }
+  .viewmore{
+    font-size: 13px;
+    display: float;
+    float: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: gray;
+  }
+  .viewmore a:visited{
+    text-decoration: none;
+    color: gray;
+  }
+  .viewmore a{
+    text-decoration: none;
+  }
+  .viewmore a:hover{
+    color: white;
+    cursor: pointer;
+  }
+  .cpul{
+      padding-left: 10px;
+      list-style-type: circle;
+  }
+  .cpul a{
+      font-size: 16px;
+      text-decoration: none;
+      display:float;
+      color: white;
+  }
+  .cpul a:hover{
+      color: gray;
+      cursor: pointer;
+  }
+  .current{
+    background-color: mistyrose;
+    color: gray;
+    border: 1px solid white;
+    grid-area: 2 / 5 / 2 / 6;
+    font-family: Arial;
+    padding: 5px;
+    border-radius: 15px;
+    padding-top: 15px;
+  }
+  
+  .cd{
+    color: gray;
+    font-family: Arial;
+    font-size: 14px;
+    grid-area: 1 / 5 / 1 / 6;
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 20px;
+  }
+  .cd img{
+    width: 50px;
+    padding-top: 10px;
+  }
+
+  .cd a{
+    text-decoration: none;
+    color: gray;
+    font-family: arial;
+    font-size: auto;
+  }
+  .cd a:hover{
+    cursor: pointer;
+    background-color: lavender;
+    border-radius: 10px;
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+  
+  .nav{
+    color: gray;
+    font-family: Arial;
+    text-align: center;
+    grid-area: 2 / 1 / 4 / 1;
+    padding-right: 30px;
+    line-height: 3; 
+  }
+
+  .bigcal{
+      justify-content: center;
+      border-radius: 10px;
+  }
+  
+  .big-projects{
+      background-color: mistyrose;
+      font-family: Arial;
+      font-size: 24px;
+      color: gray;
+      display: grid;
+      grid-area: 1 / 2 / 6 / 6;
+      padding: 35px;
+      border-radius: 15px;
+      text-decoration: none;
+  }
+  .a0{
+    display: grid;
+    grid-area: 1 / 1 / 2 / 6;
+    text-decoration: none;
+    color: gray;
+  }
+  .big-projects .a0:hover{
+    color: white;
+    cursor: pointer;
+    border-radius: 15px; 
+  }
+  .a1{
+    display: grid;
+    grid-area: 3 / 1 / 3 / 6;
+    text-decoration: none;
+    color: gray;
+  }
+  .big-projects .a1:hover{
+    color: white;
+    cursor: pointer;
+    border-radius: 15px; 
+  }
+
+  .a2{
+    display: grid;
+    grid-area: 5 / 1 / 6 / 6;
+    text-decoration: none;
+    color: gray; 
+
+  }
+  .big-projects .a2:hover{
+    color: white;
+    cursor: pointer;
+    border-radius: 15px; 
+  }
+  .oyt{
+      display: grid;
+      grid-area: 1 / 5 / 2 / 6;
+      font-size: 14px;
+      font-family: Arial;
+      color: gray;
+  }
+  .oyt1{
+    display: grid;
+    grid-area: 3 / 5 / 4 / 6;
+    font-size: 14px;
+    font-family: Arial;
+    color: gray;
+}
+.oyt2{
+  display: grid;
+  grid-area: 5 / 5 / 6 / 6;
+  font-size: 14px;
+  font-family: Arial;
+  color: gray;
+}
+  .big-projects a:visited{
+      text-decoration: none;
+      font-family: Arial;
+      font-size: 24px;
+      color: gray;
+  }
+
+  .cd input[type=text]{
+      float: right;
+      font-family: Arial;
+      border-radius: 12px;
+      font-size: 10px;
+      padding-right: 40px;
+      padding-bottom: 2px;
+  }
+
+  .picture{
+    display: grid;
+    grid-area: 3 / 2 / 5 / 3;
+  }
+
+  .contact{
+    display: grid;
+    grid-area: 5 / 2 / 7 / 4;
+    font-family: Arial;
+    color: lightgray;
+    font-size: 24px;
+    
+  }
+  .contact a{
+    text-decoration: none;
+    color: lightgray;
+    font-family: arial;
+    font-size: 24px;
+  }
+  .contact a:hover{
+    background-color: mistyrose;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    padding-right: 0px;
+  }
+  .okok{
+    width: 400px;
+    height: 267px;
+    border-radius: 10px;
+    
+    
+  }
+
+  .info{
+    display: grid;
+    grid-area: 3 / 4 / 3 / 6;
+    font-family: Arial;
+    font-size: 16px;
+    color: gray;
+    line-height: 25px;
+    padding: 15px;
+    
+  }
+  .border{
+    display: grid;
+    grid-area: 3 / 4 / 8 / 6;
+    border: solid 1.5px mistyrose;
+    border-radius: 15px;
+    
+  }
+ 
